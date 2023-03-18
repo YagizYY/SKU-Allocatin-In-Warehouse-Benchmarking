@@ -233,7 +233,7 @@ print(paste0("The improvement is ",
         (my_dt[, sum(distances, na.rm=TRUE)]-shop_floor[, sum(distances, na.rm=TRUE)])/
         my_dt[, sum(distances, na.rm=TRUE)],2), 
       "%. The distance taken in the existing configuration is ", 
-      eti[, sum(distances, na.rm=TRUE)], 
+      shop_floor[, sum(distances, na.rm=TRUE)], 
       " meters. The distance taken in the improved configuration is ", 
       shop_floor[, sum(distances, na.rm=TRUE)], " meters."))
 
